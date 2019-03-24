@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'horsebook-node-redirect';
+export class AppComponent implements OnInit {
+  title = 'Crystal Archives';
+  constructor(){}
+  ngOnInit(){
+  	window.location.href = "https://www.equestrianvault.com";
+  }
 }
