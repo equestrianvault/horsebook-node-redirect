@@ -7,8 +7,17 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+	if (location.href.indexOf("#") > -1) {
+	   location.assign(location.href.replace(/(page\/page)#anchor/i, "$1"));
+	}
+  </script>
 </head>
 <body>
   <app-root></app-root>
+  <noscript>
+  	<h1>Equestrian Vault</h1>
+    <p>Please visit our new home at <a href="https://www.equestrianvault.com">https://www.equestrianvault.com</a></p>
+  </noscript>
 </body>
 </html>
